@@ -3,140 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Some Web Page</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .menu-container {
-            color: #fff;
-            background: #5995DA;
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        .menu {
-            width: 900px;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .links {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            font-size: 1.5rem;
-        }
-        .login {
-            margin-left: 20px;
-        }
-
-        .header-container {
-            color: #5995DA;
-            background: #D6E9FE;
-            display: flex;
-            justify-content: center;
-        }
-
-        .header {
-            width: 900px;
-            height: 300px;
-            display: flex;
-            align-items: center;
-        }
-
-        .photo-grid-container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .photo-grid {
-            width: 900px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .photo-grid-item {
-            border: 1px solid #fff;
-            width: 300px;
-            height: 300px;
-        }
-
-        /* footer */
-        .footer {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .footer-item {
-            border: 1px solid #fff;
-            background: #D6E9FE;
-            height: 200px;
-            flex: 1;
-        }
-        
-        .footer-one, .footer-three {
-            background-color: #5995DA;
-            flex: initial;
-            width: 300px;
-            }
-
-        @media (max-width: 700px) {
-           .links {
-                display: flex;
-                flex-direction: column;
-            }
-        }
-    </style>
+    <title>Flex - Layout</title>
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    header {
+        background: #bad;
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav {
+        background: #f5deb3;
+        padding: 1em;
+        flex: 1;
+    }
+    main {
+        background: #40e0d0;
+        padding: 1em;
+        flex: 3;
+    }
+
+    aside {
+        background: #ccc;
+        padding: 1em;
+        flex: 1;
+    }
+
+    footer {
+        background: #e99;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    #conteneur {
+        display: flex;
+        flex-direction: column;
+        width: 700px;
+        margin: 1em auto;
+    }
+    #items {
+        display: flex;
+        /* justify-content: flex-start;
+        align-items: stretch; */
+    }
+
+</style>
 <body>
-    <div class="menu-container">
-        <div class="menu">
-            <div class="date">Aug 14, 2020</div>
-            <div class="links">
-                <div class="signup">Sign Up</div>
-                <div class="login">Login</div>
-           </div>
-        </div>
+    <div id="conteneur">
+        <header>
+            <h1>HEADER</h1>
+        </header>
+
+        <section id="items">
+            <nav>
+                <h1>Display</h1>
+                <ul>
+                    <li>inline</li>
+                    <li>block</li>
+                    <li>inline-block</li>
+                    <li>flex</li>
+                    <li>gride</li>
+                </ul>
+            </nav>
+
+            <main>
+                <h1>Main</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit exercitationem, obcaecati optio veritatis mollitia ducimus rem recusandae beatae blanditiis autem expedita magnam fugit dolore, doloremque veniam numquam, earum ipsa! Eius.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum maiores totam quisquam doloremque nostrum, dolor a, doloribus aliquid, rem quo optio commodi facere ex saepe placeat perspiciatis. Error, cupiditate harum.</p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ipsum doloremque vel id accusantium amet. Voluptates consectetur expedita necessitatibus temporibus libero ipsam, nemo cum repudiandae quia provident natus, nihil nam!
+            </main>
+
+            <aside>
+                <h1>Aside</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat vel eum quae. Distinctio ullam, sapiente dicta, numquam alias consectetur cumque voluptate reprehenderit, error corporis consequuntur magnam nemo ad enim soluta?</p>
+            </aside>
+        </section>
+        
+        <footer>
+            <h1>FOOTER</h1>
+            <p>&copy; Felxbox - 2020</p>
+        </footer>
     </div>
-    <!-- ||| -->
-    <div class='header-container'>
-        <div class='header'>
-          <div class='subscribe'>Subscribe &#9662;</div>
-          <div class='logo'><img src='images/awesome-logo.svg'/></div>
-          <div class='social'><img src='images/social-icons.svg'/></div>
-        </div>
-      </div>
-      <!-- ||| -->
-      <div class='photo-grid-container'>
-        <div class='photo-grid'>
-          <div class='photo-grid-item first-item'>
-            <img src='images/one.svg'/>
-          </div>
-          <div class='photo-grid-item'>
-            <img src='images/two.svg'/>
-          </div>
-          <div class='photo-grid-item'>
-            <img src='images/three.svg'/>
-          </div>
-          <div class='photo-grid-item'>
-            <img src='images/four.svg'/>
-          </div>
-          <div class='photo-grid-item last-item'>
-            <img src='images/five.svg'/>
-          </div>
-        </div>
-      </div>
-      <!-- ||| -->
-      <div class='footer'>
-        <div class='footer-item footer-one'></div>
-        <div class='footer-item footer-two'></div>
-        <div class='footer-item footer-three'></div>
-      </div>
 </body>
 </html>
