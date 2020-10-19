@@ -1,0 +1,132 @@
+body {
+    background: #1c1c1c;
+}
+
+/* 
+=====================================================
+    CLASSES - Unversal
+=====================================================
+*/
+
+.col-6 {
+    display: flex;
+}
+
+.margin {
+    margin-left: 40px;
+}
+
+/* 
+=====================================================
+    HEADER
+=====================================================
+*/
+
+header {
+    height: 220px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+header .logo {
+    padding: 50px 60px 0;
+    margin-left: 100px;
+}
+
+header .logo p {
+    padding-left: 150px;
+}
+
+header span {
+    color: #ea9f05;
+}
+
+header .compte-panier {
+    border: 1px solid #858484;
+    background: #e5e5e5;
+    height: 60px;
+    width: 350px;
+    display: flex;
+    margin: 50px 0 0;
+}
+
+header .compte-panier p {
+    padding-top: 20px;
+}
+
+header .compte-panier img, p {
+    margin: 10px;
+}
+
+header h1 {
+    text-align: right;
+    padding: 10px;
+}
+
+/* Nav */
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav a {
+    text-decoration: none;
+    padding: 5px 20px;
+    border-left: 1px solid #858484;
+    border-right: 1px solid #858484;
+    color: #000;
+}
+
+/* 
+=====================================================
+    MAIN - Gallerie
+=====================================================
+*/
+main {
+    background: #000;
+    width: 900px;
+    margin: 0 auto;
+}
+
+main .presentation img {
+    width: 900px;
+}
+#gallerie {
+    width: 900px;
+    margin: auto;
+}
+
+
+
+
+
+
+/* 
+=====================================================
+    FOOTER
+=====================================================
+*/
+footer {
+    height: 420px;
+    text-align: center;
+    background-color: #373737;
+    color: #fff;
+}
+
+.footer-flex {
+    display: flex;
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+hr {
+    width: 500px;
+}
+.reseau-sociaux {
+    text-align: center;
+}
+.reseau-sociaux img{
+    margin: 20px;
+}
