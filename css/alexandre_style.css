@@ -1,0 +1,30 @@
+header {
+    height: 300px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+
+/* FOOTER  */
+
+footer {
+    background-color: #373737;
+    color: #fff;
+}
+
+.reseau-sociaux {
+    color: #fff;
+}
