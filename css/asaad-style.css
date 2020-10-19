@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d38346b4186311a88e50136c9172c3f09a77e5b
 /* 
 =====================================================
     CLASSES - Unversal
@@ -19,10 +23,18 @@
 =====================================================
 */
 
+<<<<<<< HEAD
 #header {
     width: 1050px;
     height: 210px;
     margin: auto;
+=======
+header {
+    height: 210px;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+>>>>>>> 0d38346b4186311a88e50136c9172c3f09a77e5b
 }
 
 .header-logo {
