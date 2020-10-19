@@ -1,6 +1,3 @@
-body {
-    background: #1c1c1c;
-}
 
 /* 
 =====================================================
@@ -23,7 +20,7 @@ body {
 */
 
 header {
-    height: 220px;
+    height: 210px;
     background: #fff;
     padding: 0;
     margin: 0;
