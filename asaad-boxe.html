@@ -10,73 +10,94 @@
 </head>
 <body>
     <header>
-        <div id="header">
-                <div class="header-logo">
-                    <div class="logo">
-                        <img src="img/logo.png" alt="Logo" >
-                        <p>Lorem ipsum dolor <span>site amet</span></p>
-                    </div>
-                    
-                    <div>
-                        <div class="compte-panier">
-                            <img src="img/icon-mon-compte.png" alt="Icon - Compte">
-                            <p>Mon compte</p>
-                            <img src="img/icon-mon-panier.png" alt="Icon - Panier" class="margin">
-                            <p>Votre panier est vide</p>
-                        </div>
-                        <h1>Bonjour Julien</h1>
-                    </div>
+        <div id="header-container">
+            <div class="header-flex">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo" >
+                    <p>Lorem ipsum dolor <span>sit amet</span></p>
                 </div>
+                <!-- ||| -->
+                <div>
+                    <div class="compte-panier">
+                        <img src="img/icon-mon-compte.png" alt="Icon - Compte">
+                        <p>Mon compte</p>
+                        <!-- ||| -->
+                        <img src="img/icon-mon-panier.png" alt="Icon - Panier">
+                        <p>Votre panier est vide</p>
+                    </div>
+                    <h1>Bonjour Julien</h1>
+                </div>
+            </div>
             
             <!-- NAV -->
             <nav>
                 <a href="#contact">Contactez-nous</a>
-                <a href="#parrainage">parrainage</a>
+                <a href="#parrainage">Parrainage</a>
                 <a href="#">Déconnexion</a>
             </nav>
         </div>
-        </header>
-        <!-- fin du header -->
+    </header>
+    <!-- fin header -->
 
-        <main>
-            <div id="main">
-                <div class="presentaion">
-                    <img src="img/header-page-catalogue.png" alt="Présentation">
-                </div>
-                <!-- fin de l'image présentaion -->
-                
-                <section>
-                    <div class="gallerie">
-                        <figure>
-                            <img src="img/gant-boxe-2.png" alt="Gant Boxe">
-                            <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/gant-boxe-1.png" alt="Gant Boxe" >
-                            <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
-                        </figure>
-                        <!-- ||| -->
-                        <figure>
-                            <img src="img/gant-boxe-2.png" alt="Gant Boxe">
-                            <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/gant-boxe-1.png" alt="Gant Boxe">
-                            <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
-                        </figure>
-                    </div>
-                </section>
+    <main>
+        <div id="main">
+            <div class="presentaion">
+                <img src="img/header-page-catalogue.png" alt="Présentation">
             </div>
-        </main>
-        <!-- fin du main -->
+            <!-- fin de l'image présentaion -->
+            <div class="gallerie">
+                <figure>
+                    <img src="img/gant-boxe-2.png" alt="Gant Boxe">
+                    <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
+                    <div class="price">
+                        <button>Voir la vente</button> 
+                        <span><s>120 €</s> <strong>65 €</strong></span>
+                        <p class="reduction">-45%</p>
+                    </div>
+
+                </figure>
+                <figure>
+                    <img src="img/gant-boxe-1.png" alt="Gant Boxe" >
+                    <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
+                    <div class="price">
+                        <button>Voir la vente</button> 
+                        <span><s>120 €</s> <strong>65 €</strong></span>
+                        <p class="reduction">-60%</p>
+                    </div>
+                </figure>
+                <!-- ||| -->
+                <figure>
+                    <img src="img/gant-boxe-2.png" alt="Gant Boxe">
+                    <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
+                    <div class="price">
+                        <button>Voir la vente</button> 
+                        <span><s>120 €</s> <strong>65 €</strong></span>
+                        <p class="reduction">-30%</p>
+                    </div>
+                </figure>
+                <figure>
+                    <img src="img/gant-boxe-1.png" alt="Gant Boxe">
+                    <figcaption>NTS DE BOXE COMBAT KLIMAX V3</figcaption>
+                    <div class="price">
+                        <button>Voir la vente</button> 
+                        <span><s>120 €</s> <strong>65 €</strong></span>
+                        <p class="reduction">-70%</p>
+                    </div>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <!-- fin du main -->
 
     <footer>
-        <nav>
-            <a>Qui sommes-nous</a>
-            <a>Contact</a>
-            <a>Assistancce</a>
-            <a>CGV</a>
-        </nav>
+        <div class="vide"></div>
+        <form action="">
+            <input type="radio"><label for="qui sommes-nous">Qui sommes-nous</label>
+            <input type="radio"><label for="contact">Contact</label>
+            <input type="radio"><label for="assistance">Assistancce</label>
+            <input type="radio"><label for="cvg">CVG</label>
+        </form>
+        <!-- fin du form -->
 
         <div class="footer-flex">
             <div>
@@ -96,6 +117,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque harum numquam perspiciatis a itaque quis minima beatae nisi inventore ut eligendi fuga dolor quibusdam, reiciendis, nulla aliquam sunt nostrum?</p>
             </div>
         </div>
+        <!-- fin du footer form -->
         <hr>
 
         <!-- ||| -->
@@ -105,9 +127,8 @@
             <img src="img/icon-twitter.png" alt="Réseau Sociaux - Twitter">
             <img src="img/icon-linkedin.png" alt="Réseau Sociaux - Linkedin">
             <br>
-            <p>&copy;2020 Sport priviege - Tous droits réservés</p>
+            <small>&copy;2020 Sport priviege - Tous droits réservés</small>
         </div>
     </footer>
-
 </body>
 </html>
